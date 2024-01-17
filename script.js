@@ -215,7 +215,7 @@ async function getWord (URL) {
     const processedResponse = await promise.json();
     theWord = processedResponse.word;
     // This can be done in a more direct way by using "destructuring assignment", for example:
-    //{ word } = await promise.json(); //needs to have the same property name
+    //{ word } = await promise.json(); // It needs to have the same property name
 }
 function init () {
     showLoading(true);
