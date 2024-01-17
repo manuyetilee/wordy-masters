@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.my-container {
+    width: fit-content;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-weight: 400;
+}
+
+header > h1 {
+    padding-bottom: 45px;
+}
+
+header img {
+    width: 60px;
+}
+.hidden {
+    visibility: hidden; /*Contrary to display:none, this only makes the element invisible, it doesn't remove it */
+}
+
+.scoreboard {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 45px);
+    grid-template-rows: repeat(6, 45px);
+    gap: 12px;
+}
+
+.scoreboard-letter {
+    border: 3px solid #CCC;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change-border-color {
+    animation: error 1s;
+}
+@keyframes error {
+    5% {
+        border-color: red;
+    }
+    100% {
+        border-color: #ccc;
+    }
+}
+
+.celebrate {
+    animation: change-color 3s infinite;
+}
+@keyframes change-color {
+    0% { color: blue; }
+    20% { color: purple; }
+    40% { color: red; }
+    60% { color: orange }
+    80% { color: rgb(207, 207, 0); }
+    100% { color: green; }
+  }
